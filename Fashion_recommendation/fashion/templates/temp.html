@@ -1,0 +1,33 @@
+{% extends "layout2.html" %}
+{% block content %}
+<div class="feat-container">
+    <div class="feat" id="card1">
+        <div class="overlay">
+            <a class="ml-2" href="{{ url_for('prompt')}}">
+                <h4>Prompt</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, ipsum!</p>
+            </a>
+        </div>
+
+    </div>
+    <div class="feat" id="card2">
+        <div class="overlay">
+            <a class="ml-2" href="{{ url_for('inventory')}}">
+                <h4>Inventory</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, sint!</p>
+            </a>
+        </div>
+
+    </div>
+    <div class="feat" id="card3">
+        <div class="overlay">
+            <a class="ml-2" href="{{ url_for('virtualtry')}}">
+                <h4>Feature3</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, vero.</p>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+{%endblock%}

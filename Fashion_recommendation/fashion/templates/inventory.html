@@ -1,0 +1,28 @@
+{% extends "layout2.html" %}
+{% block content %} 
+<!-- {%if done == 1%}
+<div class="alert alert-info alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>ADDED</strong>
+</div>
+{%endif%} -->
+<div id="category_bg" class="result">
+    <div class="row row-cols-3">
+        {% for i in categories %}
+        {% if loop.length ==0 %}
+        <div><h4>No Result</h4></div>
+        {% else %}
+        <div class="col card">
+            <h5>{{categories[loop.index0]}}</h5>
+            <div id="card_btn">
+                <form class="act" action="{{url_for('items')}}">
+                    <input type="hidden" id="cat_cardId" name="cat_cardId" value="{{loop.index0}}">
+                    <input type="submit" value="Open">
+                </form>
+            </div>
+        </div>
+        {%endif%}
+        {% endfor %}
+        </div>
+</div>
+{% endblock %}

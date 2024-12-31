@@ -1,0 +1,56 @@
+{% extends "layout2.html" %}
+{% block content %} 
+<!-- {%if done == 1%}
+<div class="alert alert-info alert-dismissible fade show">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <strong>ADDED</strong>
+</div>
+{%endif%} -->
+<div id="result_bg" class="result">
+    <div class="row row-cols-3">
+        {% if img|length ==0 %}
+        <div><h4>No Result</h4></div>
+        {% else %}
+        {% for i in img %}
+        <div class="col card">
+            <img src="{{i}}" alt="Denim Jeans">
+            <h5>{{discription[loop.index0]}}</h5>
+            <p class="price">{{price[loop.index0]}}</p>
+            <div id="card_btn">
+                <a class="act" href="{{visit[loop.index0]}}">Visit</a>
+                <!-- <a href="{{url_for('login')}}">ADD</a> -->
+                <form id="addItemForm" class="act">
+                    <input type="hidden" id="cardId" name="cardId" value="{{loop.index0}}">
+                    <input type="submit" value="Add">
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+        {%endif%}
+        </div>
+</div>
+{% endblock %}
+
+
+{% block sidecontent %}
+<div class="col">
+    <div id="sidevisit">
+        <div class="side-container">
+
+            <div class="sidebtn btn">
+        
+                <form action="{{url_for('inventory')}}">
+                    <input type="submit" value="INVENTORY">
+                </form>
+            </div>
+            <div class="sidebtn btn">
+        
+                <form action="{{url_for('virtualtry')}}">
+                    <input type="submit" value="VIRTUAL TRYON">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock%}

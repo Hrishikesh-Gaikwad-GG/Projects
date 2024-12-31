@@ -1,0 +1,345 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+    background: #110134;
+    color: #333333;
+    margin-top: 5rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  .bg-steel {
+    background-color: #034b7e;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+  .content-section {
+    background: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    color: #444444;
+  }
+  
+  a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    white-space: pre-line;
+  }
+  
+  .article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+  }
+  
+  .article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+/* ------------------------------------------------------ */
+  /* .strip{
+    width:100%;
+    height:100vh;
+    display: flex;
+    position: relative;
+    background-color: red;
+  } */
+
+  /* .pro{
+    background-color: red;
+  } */
+
+  /* #account_form{
+    max-width: 75vw;
+  } */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  
+  .card .act{
+    border: none;
+    outline: 0;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 5px;
+    border-style:groove;
+    text-decoration: none;
+  }
+
+  .act input{
+    background-color: black;
+    color: chocolate;
+  }
+
+  .card a:hover {
+    opacity: 0.7;
+  }
+
+  .card form:hover {
+    opacity: 0.7;
+  }
+
+.card #card_btn{ 
+  width: 100%;
+  display: flex;
+}
+
+#sidevisit{
+  /* background-color: red; */
+  height: 100vh;
+  width: 25vw;
+  padding: 30px;
+}
+
+.side-container{
+  /* background-color: blue; */
+  height: 25vh;
+  width: 90%;
+  text-align: center;
+  padding:5px;  
+  margin: 10px;
+}
+.sidebtn form{
+ /* background-color: #95c11e; */
+ height: 100%;
+ padding: 10px;
+ margin: 10px;
+}
+
+.sidebtn input{
+  background-color: #034b7e;
+  font-weight: 400;
+  font-size: 20px;
+  color:white;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+ }
+
+.sidebtn:hover {
+  opacity: 0.7;
+}
+
+.prompt{
+  background-color: royalblue;
+  height:auto;
+  width:70vw;
+  margin-left: 15%;
+  margin-top: 20%;
+}
+  .prompt form{
+    background-color: orange;
+    height:auto;
+    width:70vw;
+    display: block;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+  }
+
+  .prompt form input{
+    height: 80%;
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: 600;
+    border-radius: 10px;
+  }
+  .pbutton{
+    margin-left: 38%;
+    width: 25%;
+    height: 50%;
+    text-align: center;
+    border-radius: 10px;
+
+  }
+
+  .bgvideo{
+    height: 100vh;
+    width: 100vw;
+    /* z-index: -10; */
+  }
+  #blur{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    /* opacity: 0.5; */
+  }
+
+  /* #features{
+    background-color: red;
+    height: 50vh;
+    width: 90vw;
+    margin-left: 5vh;
+    display: flex;
+ 
+  }
+
+  #features div{
+    position: relative;
+    background-color: blue;
+    height: 80%;
+    width: auto;
+  } */
+
+  .feat{
+    width: 30vw;
+    height: 50vh;
+    background-color: red;
+    margin: 5%;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .feat-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .feat-container a {
+    text-decoration: none;
+  }
+
+  #card1{
+
+    background-image: url(https://www.unite.ai/wp-content/uploads/2023/11/5d1f93fb-0da0-497d-9e7e-6eeafd693444.jpg);
+
+  }
+  #card2{
+
+    background-image: url(https://nexite.io/wp-content/uploads/2023/02/store-inventory-control.jpg);
+
+  }
+  #card3{
+
+    background-image: url(https://media.licdn.com/dms/image/v2/D4D22AQGcSQZAamN5bw/feedshare-shrink_800/feedshare-shrink_800/0/1693687540671?e=2147483647&v=beta&t=-PPV5mo29XreRVjeGxYE9Efii3xYLUd2WzxsNbTvFVY);
+
+  }
+
+  .overlay h4{
+    color:black;
+    font-size: 40px;
+    font-weight: 900;
+    text-align:start;
+    padding-top: 120px;
+    padding-bottom:20px ;
+    position: relative;
+}
+
+.overlay p{
+    color: black;
+    font-size: 18px;
+    line-height: 35px;
+    padding-bottom: 20px;
+    
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: #95c11e;
+    padding: 0px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all ease 0.6s;
+
+}
+
+.feat:hover .overlay{
+    opacity:1;
+}
+
+.result{
+  background-color: rgb(62, 68, 114);
+  width: 70vw;
+}
+/* ------------------------------------------------- */
+
+.category-btn {
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: none;
+  position: absolute;
+  right: 120px; /* Adjust as necessary for your layout */
+  top: 50px; /* Adjust as necessary for your layout */
+  width: 300px; /* Width of the dropdown */
+  max-height: 300px; /* Maximum height */
+  overflow-y: auto; /* Enable scrolling */
+  border: 1px solid #ddd;
+  background-color: white;
+  z-index: 1000; /* Ensure it is on top */
+}
+
+.dropdown-btn {
+  position: relative;
+}
+
+/* -------------------------------------------- */

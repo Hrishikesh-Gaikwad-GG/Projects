@@ -1,0 +1,44 @@
+{% extends "layout2.html" %}
+{% block content %}
+<!-- <div class="row row-cols-3">
+</div> -->
+<!-- <div class="content-section"> -->
+    <div class="alert alert-info alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>NOTE!</strong> Type something releated to fashion.
+    </div>
+    {% if err == 1 %}
+    <div class="alert alert-warning alert-dismissible fade show">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>NOTE!</strong> Some error occured! Try again.
+    </div>
+    {% endif %}
+    <div class="d-flex prompt">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+            <!-- <input class="form-control me-5" type="text" placeholder="What are you looking for?"> -->
+            <div class="form-group">
+                {{form.prompt.label(class = "form-control-label")}}
+                {% if form.prompt.errors %}
+                    {{ form.prompt(class="form-control form-control-lg is-invalid") }}
+                    <div class="invalid_feedback">
+                        {% for error in form.prompt.errors %}
+                        <span>{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{form.prompt(class = "form-control form-control-lg")}}
+                {% endif %}
+            </div>
+            <!-- <button class="btn btn-border-dark me-5" type="button">Show Result</button> -->
+        </fieldset>
+        <div class="form-group pbutton">
+            {{form.submit(class = "btn btn-outline-info")}}
+        </div>
+        </form>
+    </div>
+<!-- </div> -->
+
+
+{% endblock %}
