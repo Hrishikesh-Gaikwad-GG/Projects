@@ -1,8 +1,0 @@
-/backend/
-
-/instance/
-
-/fashion/GoogleNews-vectors-negative300.bin.gz
-
-*.pyc
-__pycache__/
